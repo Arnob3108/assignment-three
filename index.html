@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Edu</title>
+    <title>Brit College Of Engineering & Technology</title>
+    <!-- favicon added  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- bootstrap added  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -19,7 +21,7 @@
         <nav class="navbar container mt-2 navbar-expand-lg">
             <div class="container-fluid">
                 <div>
-                    <a class="navbar-brand h1 fw-bold nav-margin" href="#">PRO EDU</a>
+                    <a class="navbar-brand h1 fs-1 fw-bold nav-margin" href="#">BCET</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,36 +29,38 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#courses">Courses</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Success</a>
+                            <a class="nav-link" href="#success">Success</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#registration">Register</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <button class="btn btn-outline-primary">Register</button>
+                        <button class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Register</button>
                     </form>
                 </div>
             </div>
         </nav>
         <!-- navigation end  -->
+
         <!-- slide images  -->
         <section class="container mt-5">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -68,32 +72,32 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block mb-md-5">
-                            <span class="display-3 text-light fw-bold">Get Started Digital <br> Learning</span>
-                            <p class="text-light h5 mt-5">It is a long established fact that a reader will be
-                                distracted by the readable content of
-                                a page when looking at its layout.</p>
-                            <button class="btn btn-primary text-light mt-5">Get Started</button>
+                        <div class="carousel-caption d-md-block mb-md-0 mb-0 mb-lg-5">
+                            <span class="display-4 text-light fw-bold">Graphics Design</span>
+                            <p class="text-light h5 mt-0 mt-md-3 mt-lg-5">Do you love to design but can't design?
+                                We'll
+                                teach you from start to finish by hand</p>
+                            <button class="btn btn-primary fw-bold text-light mt-1 mt-md-0 mt-lg-5"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</button>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/cover/cover-2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block mb-md-5">
-                            <span class="display-3 text-light fw-bold">Get Started Digital <br> Learning</span>
-                            <p class="text-light h5 mt-5">It is a long established fact that a reader will be
-                                distracted by the readable content of
-                                a page when looking at its layout.</p>
-                            <button class="btn btn-primary text-light mt-5">Get Started</button>
+                        <div class="carousel-caption d-md-block mb-md-0 mb-0 mb-lg-5">
+                            <span class="display-4 text-light fw-bold">UI/UX Design</span>
+                            <p class="text-light h5 mt-0 mt-md-3 mt-lg-5">Love to do UI/UX design!!! <br> Join Us</p>
+                            <button class="btn btn-primary fw-bold text-light mt-1 mt-md-0 mt-lg-5"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</button>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/cover/cover-3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-md-block mb-md-5">
-                            <span class="display-3 text-light fw-bold">Get Started Digital <br> Learning</span>
-                            <p class="text-light h5 mt-5">It is a long established fact that a reader will be
-                                distracted by the readable content of
-                                a page when looking at its layout.</p>
-                            <button class="btn btn-primary text-light mt-5">Get Started</button>
+                        <div class="carousel-caption d-md-block mb-md-0 mb-0 mb-lg-5">
+                            <span class="display-4 text-light fw-bold">Photography</span>
+                            <p class="text-light h5 mt-0 mt-md-3 mt-lg-5">Want to be a Professional Photographer!!! <br>
+                                Click Now</p>
+                            <button class="btn btn-primary fw-bold text-light mt-1 mt-md-0 mt-lg-5"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +117,7 @@
     </header>
     <main>
         <!-- courses section started  -->
-        <section class="container mt-5">
+        <section class="container mt-5" id="courses">
             <!-- course section header  -->
             <div class="text-center">
                 <span class="h1 fw-bold">Discover Our Popular <br>Courses</span>
@@ -239,28 +243,61 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-info d-flex mt-3 d-none d-lg-block">See More Courses</button>
-                    <button class="btn btn-info d-flex mt-3 d-block d-lg-none d-md-block">View All</button>
+                    <button class="btn btn-primary fw-bold d-flex mt-3 d-none d-lg-block">See More Courses</button>
+                    <button class="btn btn-primary fw-bold d-flex mt-3 d-block d-lg-none d-md-block">View All</button>
                 </div>
             </div>
         </section>
         <!-- courses section end  -->
 
+        <!-- e-learning institute section  -->
+        <section class="container mt-5 bg-info bg-opacity-10 g-0" id="about">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <img src="images/working-2.jpg" class="img-fluid w-100 rounded" alt="">
+                </div>
+                <div class="col-lg-6 col-12 p-4">
+                    <h1 class="fw-bold">Exploring BCET and it's <br> courses</h1>
+                    <p class="my-4">Find the right instructor for you. Choose from many topics, skill levels, and
+                        languages. Shop
+                        thousands of high-quality on-demand online courses. <br> Start learning today.
+                    </p>
+                    <span class="mt-5">100,000+ High-Quality On-Demand Online Courses! Find the Right Instructor for
+                        You.
+                    </span>
+                    <div class="d-flex mt-4 gap-2 gap-lg-5">
+                        <div class="">
+                            <h1 class="fw-bolder">3.2k+</h1>
+                            <p class="fs-6 fw-semibold text-secondary">Online Course</p>
+                        </div>
+                        <div>
+                            <h1 class="fw-bolder">600k+</h1>
+                            <p class="fs-6 fw-semibold text-secondary">Expert Mamber</p>
+                        </div>
+                        <div>
+                            <h1 class="fw-bolder">1k+</h1>
+                            <p class="fs-6 fw-semibold text-secondary">Review & Ratings</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary fw-bold">Read More</button>
+                </div>
+            </div>
+        </section>
+        <!-- e-learning institute section end -->
+
         <!-- modal section start  -->
-        <section class="container bg-info mt-5">
+        <section class="container bg-primary mt-5 rounded-3" id="registration">
             <div class="d-flex flex-column flex-lg-row p-5 align-items-center justify-content-between">
                 <div class="w-75 text-lg-start text-md-center text-center">
                     <p class="h2 text-light">Ready to Join?</p>
-                    <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, quasi quam
-                        animi incidunt
-                        atque
-                        beatae velit omnis nam error corporis sed quaerat cupiditate maxime ipsum, tempore nostrum!
-                        Velit,
-                        dignissimos nemo?</p>
+                    <p class="text-light">Brit College of Engineering & Technology (BCET) recruits experienced UK
+                        certified teachers who have got Qualified Teacher Status (QTS). It helps BCET meet the UK
+                        standard education system and students from Bangladesh and other countries could study online
+                        with an affordable cost.</p>
                 </div>
                 <!-- button with modal  -->
                 <div>
-                    <button class="btn btn-light text-info h4 w-100 fw-bold" data-bs-toggle="modal"
+                    <button class="btn btn-light text-primary h4 w-100 fw-bold" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Register Now</button>
                 </div>
             </div>
@@ -270,21 +307,71 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">BCET</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Are You Sure? <br> Do You Want To go Whit Registration Progress?</p>
+                            <p>Are You Sure? <br> Do You Want To go With Registration Progress?</p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-success">Yes</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- modal section end  -->
+
+        <!-- Students section  -->
+        <section class="container mt-5" id="success">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder mb-4">Meet Our Successful Students</h1>
+                <p class="text-secondary fw-semibold">They gain there success in life from here. They are specialist in
+                    there
+                    subjects.</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="h5 fw-bold">Sajedur Rahman</p>
+                            <p class="fs-6 text-muted fw-semibold">Graphics Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="h5 fw-bold">Maria Akter</p>
+                            <p class="fs-6 text-muted fw-semibold">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/student/student-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="h5 fw-bold">Arnob</p>
+                            <p class="fs-6 text-muted fw-semibold">Fullstack Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-sm-block">
+                    <div class="card">
+                        <img src="images/student/student-4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="h5 fw-bold">Sweety</p>
+                            <p class="fs-6 text-muted fw-semibold">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5"><button class="btn btn-success fw-bold">View More</button></div>
+        </section>
+        <!-- Students section end -->
 
         <!-- frequently ask ques section start  -->
         <section class="container mt-5">
@@ -397,8 +484,8 @@
     <!-- footer section  -->
     <footer class="bg-dark text-light mt-5 p-5">
         <div class="text-center p-5">
-            <h1>Pro Edu</h1>
-            <p>Office 41, Zawaya Buildin, Ghala Muscat, <br>Sultanate of Oman</p>
+            <h1>BCET</h1>
+            <p class="mt-4">Office 41, Zawaya Buildin, Ghala Muscat, <br>Sultanate of Oman</p>
             <p>Privacy Policy <span class="mx-3">|</span>Terms of us</p>
         </div>
         <div class="text-center">
